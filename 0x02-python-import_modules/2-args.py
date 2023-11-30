@@ -4,7 +4,12 @@ if __name__ == "__main__":
     import sys
     a = len(sys.argv) - 1
 
-    print("{} arguments:".format(a))
+    if a == 0:
+        print("{} arguments.".format(a))
+    elif a == 1:
+        print("{} argument:".format(a))
+    else:
+        print("{} arguments:".format(a))
 
     if a >= 1:
         a = 0
