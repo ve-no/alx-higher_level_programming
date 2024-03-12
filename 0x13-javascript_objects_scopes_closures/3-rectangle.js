@@ -7,7 +7,8 @@ class Rectangle {
     }
   }
   print () {
-    for (let i = 0; i < this.height; i++)
+    let i = 0;
+    for (i = 0; i < this.height; i++)
       console.log('X'.repeat(this.width));
   }
 }
